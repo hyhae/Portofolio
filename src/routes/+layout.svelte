@@ -1,5 +1,6 @@
 <script>
 	import About from "../components/about.svelte";
+  import 'normalize.css';
 </script>
 
 
@@ -25,8 +26,6 @@
 <style>
     
 :root{
-    padding: 0px;
-    margin: 0px;
     background-color: rgb(15 23 42);
     font-family: sans-serif;
     color: white;
