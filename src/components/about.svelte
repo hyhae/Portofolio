@@ -7,8 +7,11 @@
 
     <div class= "info-container">
         <span class="name">Hussein ElSherif</span>
-        <h3 class="job">Senior Fullstack developer at Cegedim</h3>
-        <h5 class="statement">I build modern high performing digital experiences for the web</h5>
+
+        <span class="job">Senior Fullstack developer<br>@ Cegedim Egypte</span>
+
+
+        <span class="statement">I build modern high performing digital experiences for the web</span    >
     </div>
 </div>
 
@@ -27,7 +30,6 @@
 
     .img-container{
         display: flex;
-        justify-content: center;
         max-width: 50vw;
     }
 
@@ -44,6 +46,7 @@
         justify-content: flex-start;
         align-items: start;
         width: 100%;
+        gap: 1rem;
     }
 
     .name{
@@ -51,52 +54,47 @@
         font-weight: 700;
     }
 
-    @media (max-width: 1250px){
+    @media (max-width: 1000px){
         .main-container{
             display: flex;
             flex-direction: column;
-            justify-content: space-around;
+            justify-content: space-evenly;
             gap: 1rem;
-            margin-top: 5vh;
-            width: 100%;
+            margin: 10vw ;
         }
 
         .img-container{
+            width: 80vw;
             display: flex;
             flex-direction: row;
             justify-content: center;
-            align-items: center;
-            align-self: center;
         }
 
         .img-item{
             align-self: center;
-            max-height: 30vh;
             border-radius: 100%;
+            max-width: 50vw;
         }
 
 
         .info-container{
+            width: 80vw;
             display: flex;
             flex-direction: column;
             flex:1;
-            justify-content: center;
-            align-items: center;
-            width: 100vw;
-            margin: 0px;
         }
 
         .name{
-            font-size: 3vh;
+            font-size: 8vw;
             font-weight: 700;
         }
         
         .job{
-            
+            font-size: 4vw;
         }
 
         .statement{
-            
+            font-size: 3vw;
         }
     }
 

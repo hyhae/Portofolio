@@ -10,7 +10,7 @@
 </head>
 
   
-<div class="grid grid-cols-2">
+<div class="display">
     
     <div class="left-column">
       <slot name="left">
@@ -19,7 +19,9 @@
     </div>
 
     <div class="right-column">
-      <slot name="right"></slot>
+      <slot name="right">
+        test
+      </slot>
     </div>
   </div>
 
@@ -28,14 +30,18 @@
 :root{
     background-color: rgb(15 23 42);
     font-family: sans-serif;
-    color: white;
+    color: #e2e8f0;
 }
 
-.grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 1rem;
-    height: 100vh;
+.display {
+    display: flex;
+    flex-direction: row;
+  }
+
+  @media (max-width: 1250px){
+    .display{
+      flex-direction: column;
+    }
   }
 
 </style>
