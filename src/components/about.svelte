@@ -5,30 +5,41 @@
         <img class="img-item" src="https://media.licdn.com/dms/image/D5603AQFu10td_MrZxA/profile-displayphoto-shrink_800_800/0/1691527861938?e=1697068800&v=beta&t=JPHq_EJQKj2Py9mKzyw-ogiRN1awKKWkyhwhM7wP1SM">
     </div>
 
-    <div class= "info-container">
-        <span class="name">Hussein ElSherif</span>
+    <div class= "main-info-container">
+        <div class= "info-container">
+            <span class="name">Hussein ElSherif</span>
+    
+            <span class="job">Senior Fullstack developer<br>@ Cegedim Egypte</span>
+    
+            <span class="statement">I build modern high performing digital experiences for the web</span> 
+        </div>
 
-        <span class="job">Senior Fullstack developer<br>@ Cegedim Egypte</span>
+        <div class = "nav-container">
+                <li>
+                    <a>About</a>
+                </li>
+            
+                <li>
+                    <a>Experience</a>
+                </li>
+            
+                <li>
+                    <a>Projects</a>
+                </li>
+            
+                <li>
+                    <a>Reference</a>
+                </li>
+        </div>
 
-        <span class="statement">I build modern high performing digital experiences for the web</span    >
     </div>
+
 </div>
 
 
 
 <style>
     @media (min-width: 1000px){
-        .main-container{
-            display: flex;
-            flex-direction: row;
-            flex:1;
-            justify-content: space-evenly;
-            align-items: center;
-            gap: 2rem;
-            margin-top: 15vh;
-            width:50vw;
-        }
-
         .img-container{
             margin-left: 10vw;
             align-items: center;
@@ -45,6 +56,17 @@
             max-width: inherit;
         }
 
+        .main-info-container{
+            display: flex;
+            flex-shrink: 1;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: start;
+            width: 100vw;
+            height: 100vh;
+            gap: 1rem;
+        }
+
         .info-container{
             display: flex;
             flex-shrink: 1;
@@ -52,32 +74,30 @@
             justify-content: flex-start;
             align-items: start;
             width: 100%;
+            height: 20vh;
             gap: 1rem;
         }
 
-        .name{
-            font-size: 3vh;
-            font-weight: 700;
+        .nav-container{
+            flex-direction: column;
+            flex:1;
+            align-items: flex-start;
+            align-self: flex-start;
+            margin-left: 1vw;
         }
 
-        .job{
-            font-size: 2vh;
+        .nav-container li{
+            margin-top: 1.5vh;
         }
 
-        .statement{
-            font-size: 1.5vh;
+        li::marker{
+            content:"-";
+            font-size: 1.5rem;
+            vertical-align: bottom;
         }
     }
     
     @media (max-width: 1000px){
-        .main-container{
-            display: flex;
-            flex-direction: column;
-            justify-content: space-evenly;
-            gap: 1rem;
-            margin: 10vw ;
-            align-items: normal;
-        }
 
         .img-container{
             margin-left: 0;
@@ -103,17 +123,8 @@
             flex:1;
         }
 
-        .name{
-            font-size: 8vw;
-            font-weight: 700;
-        }
-        
-        .job{
-            font-size: 4vw;
-        }
-
-        .statement{
-            font-size: 3vw;
+        .nav-container{
+            display:none;
         }
     }
 

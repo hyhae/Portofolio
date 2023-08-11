@@ -1,6 +1,7 @@
 <script>
 	import About from "../components/about.svelte";
   import 'normalize.css';
+  import '../global.css';
 </script>
 
 <svelte:head>
@@ -21,7 +22,9 @@
 
     <div class="right-column">
       <slot name="right">
-        test
+        <div class="main-container">
+          test
+        </div>
       </slot>
     </div>
   </div>
