@@ -3,12 +3,13 @@
   import 'normalize.css';
 </script>
 
+<svelte:head>
+  <title>Hussein ElSherif</title>
+</svelte:head>
 
 <head>
-    <title>Hussein ElSherif</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
-
   
 <div class="display">
     
@@ -38,7 +39,7 @@
     flex-direction: row;
   }
 
-  @media (max-width: 1250px){
+  @media (max-width: 1000px){
     .display{
       flex-direction: column;
     }
