@@ -16,19 +16,19 @@
 
         <div class = "nav-container">
                 <li>
-                    <a>About</a>
+                    <span class = "list-style">-</span><a>About</a>
                 </li>
             
                 <li>
-                    <a>Experience</a>
+                    <span class = "list-style">-</span><a>Experience</a>
                 </li>
             
                 <li>
-                    <a>Projects</a>
+                    <span class = "list-style">-</span><a>Projects</a>
                 </li>
             
                 <li>
-                    <a>Reference</a>
+                    <span class = "list-style">-</span><a>Reference</a>
                 </li>
         </div>
 
@@ -84,16 +84,27 @@
             align-items: flex-start;
             align-self: flex-start;
             margin-left: 1vw;
+            width: 100%;
         }
 
         .nav-container li{
             margin-top: 1.5vh;
+            list-style: none;
+            width: 100%;
         }
 
-        li::marker{
-            content:"-";
-            font-size: 1.5rem;
-            vertical-align: bottom;
+        .list-style{
+            display: inline-block;
+            overflow: hidden;
+            transition:width 0.25s;
+            -webkit-transition:width .25s;
+            -moz-transition: width 0.25s;
+            width: 5%;
+        }
+        
+        .list-style:hover{
+            width: 10%;
+            text-align: right;
         }
     }
     
