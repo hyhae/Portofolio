@@ -100,6 +100,7 @@
             -webkit-transition:width .25s;
             -moz-transition: width 0.25s;
             width: 5%;
+            margin-right: 0.5vw;
         }
         
         .list-style:hover{
