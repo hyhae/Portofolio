@@ -11,16 +11,16 @@
         height: 100vh;
     }
 
-    .name{
+    .header{
         font-size: 3vh;
         font-weight: 700;
     }
 
-    .job{
+    .primary{
         font-size: 2vh;
     }
 
-    .statement{
+    .secondary{
         font-size: 1.5vh;
     }
 }

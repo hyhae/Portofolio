@@ -7,28 +7,28 @@
 
     <div class= "main-info-container">
         <div class= "info-container">
-            <span class="name">Hussein ElSherif</span>
+            <span class="header">Hussein ElSherif</span>
     
-            <span class="job">Senior Fullstack developer<br>@ Cegedim Egypte</span>
+            <span class="primary">Senior Fullstack developer<br>@ Cegedim Egypte</span>
     
-            <span class="statement">I build modern high performing digital experiences for the web</span> 
+            <span class="secondary">I build modern high performing digital experiences for the web</span> 
         </div>
 
         <div class = "nav-container">
                 <li>
-                    <span class = "list-style">-</span><a>About</a>
+                    <span class = "primary list-style">-</span><a>About</a>
                 </li>
             
                 <li>
-                    <span class = "list-style">-</span><a>Experience</a>
+                    <span class = "primary list-style">-</span><a>Experience</a>
                 </li>
             
                 <li>
-                    <span class = "list-style">-</span><a>Projects</a>
+                    <span class = "primary list-style">-</span><a>Projects</a>
                 </li>
             
                 <li>
-                    <span class = "list-style">-</span><a>Reference</a>
+                    <span class = "primary list-style">-</span><a>Reference</a>
                 </li>
         </div>
 
@@ -95,17 +95,26 @@
 
         .list-style{
             display: inline-block;
-            overflow: hidden;
-            transition:width 0.25s;
-            -webkit-transition:width .25s;
-            -moz-transition: width 0.25s;
-            width: 5%;
-            margin-right: 0.5vw;
+            transition: all .3s ease-in-out;
+            margin-right: 1vw;
+            display:inline-block;
+            -webkit-transform:scale(3,1); /* Safari and Chrome */
+            -moz-transform:scale(3,1); /* Firefox */
+            -ms-transform:scale(3,1); /* IE 9 */
+            -o-transform:scale(3,1); /* Opera */
+            transform:scale(3,1); /* W3C */
+            transform-origin: left;
         }
         
         .list-style:hover{
-            width: 10%;
-            text-align: right;
+            text-align: center;
+            -moz-transform:scale(10, 1); /* Firefox */
+            -webkit-transform:scale(10,1); /* Safari and Chrome */
+            -moz-transform:scale(10, 1); /* Firefox */
+            -ms-transform:scale(10,1); /* IE 9 */
+            -o-transform:scale(10,1); /* Opera */
+            margin-right: 3vw;
+            transform-origin: left;
         }
     }
     
